@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- lien vers css -->
+    <link rel="stylesheet" href="./CSS/home.css">
+   
+</head>
+<body>
+    <main class="container">
+        <header id="navbar">
+            <img src="./Logos/logohome.png" alt="Batman Logo">
+            <div class="navlist">
+                <a href="#">HOME</a>
+                <a href="#">GAME</a>
+            </div>
+        </header>
+
+        <!-- pour créer la ligne qui separent de la barre de navigation -->
+        <div class="null"></div>
+
+        <!-- la partie de page au début -->
+        <section id="content1">
+            <p>Au nom de ses parents assassinés, Bruce Wayne mène <br>
+                une guerre éternelle contre les criminels de Gotham City. <br>
+                Il est vengeur. Il est la nuit. 
+            </p>
+            <p id="batman">Il est Batman.</p>
+            <div class="btn">
+                <button>VOIR LE HÉROS</button>
+                <button>LES ADVERSAIRES</button>
+            </div>
+        </section>
+
+        <!-- les logos du coté droit -->
+        <aside>
+            <a href="#"><img src="../Assets/Logos/logo_bat_flèche.png" alt="flèche haut"></a>
+            <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook"></a>
+            <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="Instagram"></a>
+            <a href=""><img src="../Assets/Logos/icon_tw.png" alt="twitter"></a> 
+            <a href="#"><img src="../Assets/Logos/logo_bat_flèche_2.png" alt="flèche bas"></a>
+        </aside>
+
+        <!-- insertion de la flèche vers le bas -->
+        <div id="down">
+            <img src="../Assets/Logos/flèche_down_header.png" alt="flèche down">
+        </div>
+    </main>
+
+    <!-- création de la seconde partie -->
+    <section class="container2">
+        <div id="cinema">
+            <h2>BATMAN AU CINÉMA</h2>
+            <p>Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le 
+                dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le 
+                comic book Detective Comics en 1939. Batman se différencie de Superman, alors héros 
+                majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 
+                par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples 
+                acteurs d’interpréter l’homme chauve souris. Voici les trois derniers :
+            </p>
+        </div>
+
+        <!-- insertion des 3 images -->
+        <figure>
+            <img src="./Illustrations/Home/Bathome2.png" alt="">
+            <img src="./Illustrations/Home/Bathome3.png" alt="">
+            <img src="./Illustrations/Home/Bathome4.png" alt="">
+        </figure>
+    </section>
+
+    <!-- la partie image seulement -->
+    <div class="slider">
+        
+    </div>
+
+    <!-- création de la partie 4 qui ressemble au seconde partie -->
+    <section class="container4">
+        <div id="nemesis">
+            <h2>NÉMÉSIS</h2>
+            <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart 
+                du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou 
+                psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se 
+                mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmis les 
+                derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
+            </p>
+        </div>
+
+        <!-- insertion des 3 images -->
+        <figure>
+            <img src="./Illustrations/Home/Bathome5.png" alt="">
+            <img src="./Illustrations/Home/Bathome6.png" alt="">
+            <img src="./Illustrations/Home/Bathome7.png" alt="">
+        </figure>
+    </section>
+
+    <!-- la partie avec le multimédia -->
+    <section class="container5">
+        <!-- création de petite carte au centre du flèche gauche et droite -->
+        <h2>MULTIMÉDIA</h2>
+        <div id="imgSlide">
+            <a href="#"><img src="../Assets/Logos/Icones en + dans Home/icon_flèche_1.png" alt="flèche gauche"></a> 
+                <div class="cardBox">
+                    <img src="../Assets/Illustrations/Home/Bathome8.png" alt="">
+                    <div class="action">
+                        <h5>ACTION, ADVENTURE</h5>
+                        <p id="begin">Batman Begins</p>
+                        <p id="imdb">IMDB: <span> 8.2</span></p>
+                        <p id="bruceText">Le jeune Bruce Wayne assiste impuissant au meurtre de ses 
+                            parents. Profondément traumatisé, il grandit obnubilé par un 
+                            désir de vengeance. La Ligue des ombres, une secte de 
+                            guerriers ninja dirigée par Ra's al Ghul, se chargera de son 
+                            entraînement. De retour chez lui à Gotham, avec l'aide de son 
+                            majordome Alfred Pennyworth, Bruce Wayne se lance alors 
+                            dans la lutte contre le crime sous le nom de Batman.
+                        </p>
+                    </div>
+                </div>
+            <a href="#"><img src="../Assets/Logos/Icones en + dans Home/icon_flèche_2.png" alt="flèche droit"></a> 
+        </div>
+
+        <!-- L'ajout du bande annonce officielle -->
+        <div class="bandeOffice">
+            <img src="../Assets/Illustrations/Home/Bathome9_ba.png" alt="">
+        </div>
+    </section>
+
+    <!-- mise en place de la partie formulaire -->
+    <form action="" method="post">
+        <h2>PRENONS CONTACT</h2>
+        <div class="email">
+            <label for="mail">ADRESSE EMAIL</label> <br> <br>
+            <input type="email" id="mail" name="user_mail" placeholder="Adresse email">
+        </div> <br> <br>
+        <div class="newsletter">
+            <label for="newsletter">NEWSLETTER</label> <br> <br>
+            <p>
+                <span>En cochant cette case vous acceptez de recevoir l’actualité concernant les <br>
+                    aventures de Batman :
+                    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter"> 
+                </span> 
+                
+            </p> <br> 
+            <select name="" id="">
+                <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+            </select> <br> <br>
+            <input type="text" value="Souhaitez vous recevoir des news"> <br> <br>
+            <div class="btn-group">
+                <button>Des films</button>
+                <button>Des comics</button>
+                <button>De tout</button>
+            </div>
+        </div> <br> <br>
+        <div class="message">
+            <label for="message">MESSAGE</label> <br> <br>
+            <input type="text" placeholder="Laissez un commentaire pour la communauté">
+        </div> <br> <br>
+        <input type="button" value="CONFIRMER">
+    </form>
+
+    <!-- mise en place du footer -->
+    <section>
+        <div>
+            <img src="../Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+        </div>
+        <div>
+            <p>La seule façon raisonnable de vivre en ce bas monde, <br>
+                c'est en dehors des règles.
+            </p>
+            <p>The Dark Knight : Le Chevalier Noir <br>
+                Le Joker à Batman (2008)
+            </p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            
+            
+        </div>
+        <div>
+            <img src="../Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+        </div>
+    </section>
+
+    
+
+
+
+
+    
+
+
+    <script src="./JS/general.js"></script>
+    <script src="./JS/home.js"></script>
+</body>
+</html>

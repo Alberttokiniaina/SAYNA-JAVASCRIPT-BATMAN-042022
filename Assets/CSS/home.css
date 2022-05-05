@@ -1,0 +1,282 @@
+/* importation des font family */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+:root{
+    --warning-ad-color: #FFFF00;
+    --yellow-ad-color: #F8F184;
+    --primary-ad-color: #19587D;
+    --danger-ad-color: #B11313;
+    --darkpale-ad-color: #0D0E09;
+    --secondary-ad-color: #C4C4C4;
+    --dark-ad-color: #000000;
+    --white-ad-color: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url(../Illustrations/Home/Bathome1.png);
+    background-size: cover; 
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 220px 0 ;
+}
+
+.navlist a{
+    color: var(--white-ad-color);
+    text-decoration: none;
+    margin: 0 0 0 30px;
+    font-family:  'Rajdhani', sans-serif;
+    font-size: large;
+}
+
+.null{
+    background-color: #c4c4c4f1;
+    opacity: 35%;
+    height: 5px;
+    margin: 15px 150px;
+}
+
+#content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+}
+
+#content1 p{
+    color: var(--white-ad-color);
+    font-weight: lighter;
+    line-height: 25px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    margin-top: auto;
+}
+
+#content1 #batman{
+    font-size: xx-large;
+    font-weight: medium;
+    margin: 40px 0;
+}
+
+.btn button{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    color: var(--white-ad-color);
+    background-image: linear-gradient(to right, #f8f7f6, #890008);
+    opacity: 1;
+    padding: 20px 40px;
+    margin:  0 20px;
+    border: none;
+    letter-spacing: 3px;
+}
+
+/* manipulation des icones de logo dans la partie droite */
+aside{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    position: relative;
+    bottom: 250px;
+    right: -600px;
+}
+
+/* le flèche vers le bas */
+#down{
+    text-align: center;
+}
+
+/* le container2 */
+.container2, .container4{
+    background-color: var(--dark-ad-color);
+    color: var(--white-ad-color);
+    height: auto;
+    padding-top: 150px;
+}
+
+#cinema, #nemesis{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#cinema h2, #nemesis h2{
+    font-size: 36px;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+#cinema p, #nemesis p{
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: justify;
+    font-size: 22.5px;
+}
+
+/* positionement des 3 images */
+figure{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-left: 60px;
+    margin-top: 150px;
+    padding-bottom: 100px;
+}
+
+/* la partie de l'image seulement */
+.slider {
+    background-image: url(../Illustrations/Home/Batslider1.png);
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* parametrage de la partie avec multimédia */
+.container5{
+    background-color: var(--dark-ad-color);
+}
+
+.container5 h2{
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--white-ad-color);
+    padding: 0 0 60px 210px;
+    font-size: 36px;
+}
+/* manipulation de la partie image avec flèche gauche et droite */
+#imgSlide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 170px;
+}
+
+.cardBox{
+    width: 100%;
+    display: flex;
+    margin-right: -850px;
+}
+
+.action{
+    background-image: linear-gradient(to right, #5f5c5c, #19587D );
+    color: var(--white-ad-color);
+    width: 30%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 20px 0px 30px;
+}
+
+.action h5{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.action #begin{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 200;
+    font-size: large;
+    margin-top: 5px;
+}
+
+.action #imdb{
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 5px;
+}
+
+.action #imdb span{
+    color: var(--yellow-ad-color);
+}
+
+.action #bruceText{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* la bande annonce officielle */
+.bandeOffice {
+    margin: 80px 0px 0px 180px;
+    padding-bottom: 100px;
+}
+
+/* construction du formulaire */
+form{
+    color: var(--white-ad-color);
+    padding: 0 350px;
+    background-image: linear-gradient(to right bottom, #716752, #0e6969);
+}
+
+form h2{
+    font-size: 32px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    padding: 50px 0 100px ;
+}
+
+form label{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+}
+
+form p{
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--secondary-ad-color);
+    font-weight: lighter;
+}
+
+.email input, .newsletter input, .message input, select{
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid var(--secondary-ad-color);
+    width: 100%;
+    color: var(--secondary-ad-color);
+    padding: 0 0 7px;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}    
+
+.btn-group button{
+    padding: 10px 30px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #716752,#498fb8, #19587D);
+    border-image-slice: 1;
+    background-color: inherit;
+    color: var(--white-ad-color);
+}
+
+.email input::placeholder, .message input::placeholder{
+    color: var(--secondary-ad-color);
+    font-size: 15px;
+}
+
+input [type=checkbox]{
+    width: 20px;
+}
+
+input[type=button]{
+    color: var(--white-ad-color);
+    font-size: medium;
+    border: none;
+    background-image: linear-gradient(to right, #f8f7f6, #890008);
+    letter-spacing: 3px;
+    padding: 20px 70px;
+    margin: 30px 0 70px 250px;
+}
+/* configuration du footer */
