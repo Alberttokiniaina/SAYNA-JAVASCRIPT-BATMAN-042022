@@ -1,0 +1,183 @@
+/* importation des font family */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+:root{
+    --warning-ad-color: #FFFF00;
+    --yellow-ad-color: #F8F184;
+    --primary-ad-color: #19587D;
+    --danger-ad-color: #B11313;
+    --darkpale-ad-color: #0D0E09;
+    --secondary-ad-color: #C4C4C4;
+    --dark-ad-color: #000000;
+    --white-ad-color: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* la première partie avec background batman rouge */
+.container{
+    background-image: url(../Illustrations/Game/Batgame1.png);
+    background-size: cover; 
+    background-position: center;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px  ;
+    border-right: 2px solid #bcbbbd62;
+    border-left: 2px solid #bcbbbd62;
+    border-bottom: 4px solid #bcbbbd69;
+    margin: 0 100px;
+}
+
+
+.navlist a{
+    color: var(--white-ad-color);
+    text-decoration: none;
+    margin: 0 0 0 30px;
+    font-family:  'Rajdhani', sans-serif;
+    font-size: xx-large;
+}
+
+.bg{
+    border-right: 2px solid #bcbbbd62;
+    border-left: 2px solid #bcbbbd62;
+    margin: 0 100px;
+}
+
+/* le grand titre */
+.title{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+    color: var(--white-ad-color);
+    font-size: xx-large;
+    padding: 200px 0 0 100px;
+}
+
+/* manipulation des icones de logo dans la partie droite */
+aside{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    position: relative;
+    right: -610px;
+    bottom: 50px;
+}
+
+main{
+    background-color: var(--dark-ad-color);
+    color: var(--white-ad-color);
+}
+
+/* le flèche vers le bas */
+#down{
+    text-align: center;
+    padding: 100px 0 0;
+    border-right: 2px solid #bcbbbd62;
+    border-left: 2px solid #bcbbbd62;
+    margin: 0 100px;
+}
+
+/* la partie quiz */
+.quiz{
+    border-right: 2px solid #bcbbbd62;
+    border-left: 2px solid #bcbbbd62;
+    padding: 200px 0 0 100px;
+    margin: 0 100px;
+}
+
+main div h2{
+    font-family: 'Rajdhani', sans-serif;
+     font-size: xx-large;
+     padding-bottom: 40px;
+}
+
+main div section{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    
+}
+
+main div section #question{
+    padding: 30px 0;
+}
+
+main div section .reponse p{
+    background-color: #8d8d8dea;
+    width: 50%;
+    margin: 10px 0;
+    padding-left: 10px;
+    padding: 10px;
+}
+
+/* la partie du quiz 2 */
+.quiz-2 h2{
+    border-right: 2px solid #bcbbbd62;
+    border-left: 2px solid #bcbbbd62;
+    margin: -10px 100px 0;
+    padding: 200px 0 120px;
+    letter-spacing: 3px;
+}
+
+.quiz-2{
+    text-align: center;
+}
+
+.quiz-2 img{
+    margin-top: -70px;
+    margin-bottom: 100px;
+}
+
+.quiz-2 button{
+    background-image: linear-gradient(to right, #f8f7f6, #890008);
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--white-ad-color);
+    letter-spacing: 3px;
+    font-size: large;
+    border: none;
+    padding: 15px 60px;
+}
+
+/* le logo warner bros avec text à coté */
+footer{
+    background-color: var(--dark-ad-color);
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--white-ad-color);
+    font-size: 12px;
+    font-weight: lighter;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.warner{
+    display: flex;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    gap: 15px;
+    align-items: center;
+}
+
+/* les 6 petits logos tout en bas de la page */
+.footerFig{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+}
+
+.footerFig figure{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}

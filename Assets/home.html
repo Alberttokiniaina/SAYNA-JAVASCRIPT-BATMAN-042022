@@ -8,6 +8,9 @@
 
     <!-- lien vers css -->
     <link rel="stylesheet" href="./CSS/home.css">
+
+    <!-- lien font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
 </head>
 <body>
@@ -15,13 +18,10 @@
         <header id="navbar">
             <img src="./Logos/logohome.png" alt="Batman Logo">
             <div class="navlist">
-                <a href="#">HOME</a>
-                <a href="#">GAME</a>
+                <a class="active" href="home.html">HOME</a>
+                <a href="game.html">GAME</a>
             </div>
         </header>
-
-        <!-- pour créer la ligne qui separent de la barre de navigation -->
-        <div class="null"></div>
 
         <!-- la partie de page au début -->
         <section id="content1">
@@ -53,78 +53,146 @@
 
     <!-- création de la seconde partie -->
     <section class="container2">
-        <div id="cinema">
-            <h2>BATMAN AU CINÉMA</h2>
-            <p>Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le 
-                dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le 
-                comic book Detective Comics en 1939. Batman se différencie de Superman, alors héros 
-                majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 
-                par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples 
-                acteurs d’interpréter l’homme chauve souris. Voici les trois derniers :
-            </p>
-        </div>
+        <div id="bg">
+            <div id="cinema">
+                <h2>BATMAN AU CINÉMA</h2>
+                <p>Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le 
+                    dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le 
+                    comic book Detective Comics en 1939. Batman se différencie de Superman, alors héros 
+                    majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 
+                    par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples 
+                    acteurs d’interpréter l’homme chauve souris. Voici les trois derniers :
+                </p>
+            </div>
 
-        <!-- insertion des 3 images -->
-        <figure>
-            <img src="./Illustrations/Home/Bathome2.png" alt="">
-            <img src="./Illustrations/Home/Bathome3.png" alt="">
-            <img src="./Illustrations/Home/Bathome4.png" alt="">
-        </figure>
+            <!-- insertion des 3 images des acteurs-->
+            <div class="threeImg">
+                <figure>
+                    <img  src="./Illustrations/Home/Bathome2.png" alt="">
+                    <div>
+                        <figcaption>
+                            <img src="./Illustrations/Home/Robert_Pattinson.png" alt="Robert_Pattinson">
+                            <p>Robert Pattinson <br>
+                                <span>2022</span> 
+                            </p>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure>
+                    <img  src="./Illustrations/Home/Bathome3.png" alt="">
+                    <div>
+                        <figcaption>
+                            <img src="./Illustrations/Home/Christian_Bale.png" alt="Christian_Bale">
+                            <p>Christian Bale <br>
+                                <span>2006-2008-2012</span> 
+                            </p>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="./Illustrations/Home/Bathome4.png" alt="">
+                    <div>
+                        <figcaption>
+                            <img src="./Illustrations/Home/Ben_Affleck.png" alt="Ben_Affleck">
+                            <p>Ben Affleck <br>
+                                <span>2016-2017/2020-2023</span> 
+                            </p>
+                        </figcaption>
+                    </div>
+                </figure>
+            </div>
+        </div>
     </section>
 
     <!-- la partie image seulement -->
     <div class="slider">
-        
+        <div id="slide">
+            
+        </div>
     </div>
 
     <!-- création de la partie 4 qui ressemble au seconde partie -->
     <section class="container4">
-        <div id="nemesis">
-            <h2>NÉMÉSIS</h2>
-            <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart 
-                du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou 
-                psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se 
-                mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmis les 
-                derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
-            </p>
-        </div>
+        <div id="bg-4">
+            <div id="nemesis">
+                <h2>NÉMÉSIS</h2>
+                <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart 
+                    du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou 
+                    psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se 
+                    mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmis les 
+                    derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
+                </p>
+            </div>
 
-        <!-- insertion des 3 images -->
-        <figure>
-            <img src="./Illustrations/Home/Bathome5.png" alt="">
-            <img src="./Illustrations/Home/Bathome6.png" alt="">
-            <img src="./Illustrations/Home/Bathome7.png" alt="">
-        </figure>
+            <!-- insertion des 3 images -->
+            <div class="threeImg">
+                <figure>
+                    <img class="zoom" src="./Illustrations/Home/Bathome5.png" alt="">
+                    <div>
+                        <figcaption>
+                            <img src="./Illustrations/Home/Paul_Dano.png" alt="Paul_Dano">
+                            <p>The Riddler/Edward Nashton <br>
+                                <span>Paul Dano - 2022</span>
+                            </p>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="./Illustrations/Home/Bathome6.png" alt="">
+                    <div>
+                        <figcaption>
+                            <img src="./Illustrations/Home/Heath_Ledger.png" alt="The_Joker">
+                            <p>The Joker <br>
+                                <span>Heath Ledger - 2008</span>
+                            </p>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure> 
+                    <img src="./Illustrations/Home/Bathome7.png" alt="">
+                    <div>
+                        <figcaption>
+                            <img src="./Illustrations/Home/Ray_Porter.png" alt="Ray_Porter">
+                            <p>Darkseid <br>
+                                <span>Ray Porter - 2020</span>
+                            </p>
+                        </figcaption>
+                    </div>
+                </figure>
+            </div>
+        </div>   
     </section>
 
     <!-- la partie avec le multimédia -->
     <section class="container5">
-        <!-- création de petite carte au centre du flèche gauche et droite -->
-        <h2>MULTIMÉDIA</h2>
-        <div id="imgSlide">
-            <a href="#"><img src="../Assets/Logos/Icones en + dans Home/icon_flèche_1.png" alt="flèche gauche"></a> 
-                <div class="cardBox">
-                    <img src="../Assets/Illustrations/Home/Bathome8.png" alt="">
-                    <div class="action">
-                        <h5>ACTION, ADVENTURE</h5>
-                        <p id="begin">Batman Begins</p>
-                        <p id="imdb">IMDB: <span> 8.2</span></p>
-                        <p id="bruceText">Le jeune Bruce Wayne assiste impuissant au meurtre de ses 
-                            parents. Profondément traumatisé, il grandit obnubilé par un 
-                            désir de vengeance. La Ligue des ombres, une secte de 
-                            guerriers ninja dirigée par Ra's al Ghul, se chargera de son 
-                            entraînement. De retour chez lui à Gotham, avec l'aide de son 
-                            majordome Alfred Pennyworth, Bruce Wayne se lance alors 
-                            dans la lutte contre le crime sous le nom de Batman.
-                        </p>
+        <div id="bg">
+            <!-- création de petite carte au centre du flèche gauche et droite -->
+            <h2>MULTIMÉDIA</h2>
+            <div id="imgSlide">
+                <a href="#"><img src="../Assets/Logos/Icones en + dans Home/icon_flèche_1.png" alt="flèche gauche"></a> 
+                    <div class="cardBox">
+                        <img src="../Assets/Illustrations/Home/Bathome8.png" alt="">
+                        <div class="action">
+                            <h5>ACTION, ADVENTURE</h5>
+                            <p id="begin">Batman Begins</p>
+                            <p id="imdb">IMDB: <span> 8.2</span></p>
+                            <p id="bruceText">Le jeune Bruce Wayne assiste impuissant au meurtre de ses 
+                                parents. Profondément traumatisé, il grandit obnubilé par un 
+                                désir de vengeance. La Ligue des ombres, une secte de 
+                                guerriers ninja dirigée par Ra's al Ghul, se chargera de son 
+                                entraînement. De retour chez lui à Gotham, avec l'aide de son 
+                                majordome Alfred Pennyworth, Bruce Wayne se lance alors 
+                                dans la lutte contre le crime sous le nom de Batman.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            <a href="#"><img src="../Assets/Logos/Icones en + dans Home/icon_flèche_2.png" alt="flèche droit"></a> 
-        </div>
+                <a href="#"><img src="../Assets/Logos/Icones en + dans Home/icon_flèche_2.png" alt="flèche droit"></a> 
+            </div>
 
-        <!-- L'ajout du bande annonce officielle -->
-        <div class="bandeOffice">
-            <img src="../Assets/Illustrations/Home/Bathome9_ba.png" alt="">
+            <!-- L'ajout du bande annonce officielle -->
+            <div class="bandeOffice">
+                <img src="../Assets/Illustrations/Home/Bathome9_ba.png" alt="">
+            </div>
         </div>
     </section>
 
@@ -145,7 +213,12 @@
                 
             </p> <br> 
             <select name="" id="">
-                <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                <option>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                <option>Une fois par semaine</option>
+                <option>Une fois toutes les deux seamines (2 fois par mois)</option>
+                <option>Une fois par mois</option>
+                <option>Une fois tous les trois mois</option>
+                <option>Une fois tous les six mois</option>
             </select> <br> <br>
             <input type="text" value="Souhaitez vous recevoir des news"> <br> <br>
             <div class="btn-group">
@@ -162,35 +235,61 @@
     </form>
 
     <!-- mise en place du footer -->
-    <section>
-        <div>
-            <img src="../Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+    <footer>
+        <div id="bg">
+            <!-- la partie avec deux guillemets -->
+            <section class="footerText">
+                <div>
+                    <img src="../Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+                
+                    <div class="footerP">
+                        <p id="textSeule">La seule façon raisonnable de vivre en ce bas monde, <br>
+                            c'est en dehors des règles.
+                        </p>
+                        <p id="dark">The Dark Knight : Le Chevalier Noir- <br>
+                            Le Joker à Batman (2008)
+                        </p>
+
+                        <!-- les icones bleus -->
+                        <p id="icon">
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
+                        </p>
+                    </div>
+                    <div class="guillemet">
+                        <img src="../Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+                    </div>
+                </div>
+            </section>
+        
+            <!-- le petit logo de warner bros avec le texte -->
+            <section class="warner">
+                <a href="#"><img src="../Assets/Logos/icon_WB.png" alt="warner bros"></a> 
+                <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves            </p>
+            </section>
         </div>
-        <div>
-            <p>La seule façon raisonnable de vivre en ce bas monde, <br>
-                c'est en dehors des règles.
-            </p>
-            <p>The Dark Knight : Le Chevalier Noir <br>
-                Le Joker à Batman (2008)
-            </p>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            
-            
+
+        <!-- L'ajout des logos tout en bas de la page -->
+        <div class="footerFig">
+            <figure>
+                <img src="../Assets/Logos/logo_sayna_white.png" alt="sayna">
+                <a href="#"><img src="../Assets/Logos/icon_x.png" alt="x"></a> 
+                <img src="../Assets/Logos/icon_DC.png" alt="DC">
+            </figure>
+            <figure>
+                <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook"></a>
+                <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="instagram"></a>
+                <a href="#"><img src="../Assets/Logos/icon_tw.png" alt="twitter"></a>
+            </figure>
         </div>
-        <div>
-            <img src="../Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
-        </div>
-    </section>
+    </footer>
 
     
 
