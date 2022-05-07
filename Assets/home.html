@@ -16,8 +16,7 @@
 <body>
     <main class="container">
         <header id="navbar">
-            <img id="imgnav" src="./Logos/logohome.png" alt="Batman Logo">
-            <img id="imghover" src="./Logos/logohomehover.png" alt="">
+            <img id="imgnav" src="./Logos/logohome.png" alt="Batman Logo" onmouseover="onImg.call(this)" onmouseout="outImg.call(this)">
             <div class="navlist">
                 <a class="active" href="home.html">HOME</a>
                 <a href="game.html">GAME</a>
@@ -40,11 +39,11 @@
 
             <!-- les logos du coté droit -->
             <aside>
-                <a href="#"><img src="../Assets/Logos/logo_bat_flèche.png" alt="flèche haut"></a>
-                <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook"></a>
-                <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="Instagram"></a>
-                <a href=""><img src="../Assets/Logos/icon_tw.png" alt="twitter"></a> 
-                <a href="#"><img src="../Assets/Logos/logo_bat_flèche_2.png" alt="flèche bas"></a>
+                <a href="#"><img src="../Assets/Logos/logo_bat_flèche.png" alt="flèche haut" onmouseover="upImg.call(this)" onemouseout="upToImg.call(this)"></a>
+                <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook" onmouseover="onFb.call(this)" onmouseout="outFb.call(this)"></a>
+                <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="Instagram" onmouseover="onIg.call(this)" onmouseout="outIg.call(this)"></a>
+                <a href=""><img src="../Assets/Logos/icon_tw.png" alt="twitter" onmouseover="onTw.call(this)" onmouseout="outTw.call(this)"></a> 
+                <a href="#"><img src="../Assets/Logos/logo_bat_flèche_2.png" alt="flèche bas" onmouseover="downImg.call(this)" onmouseout="downToImg.call(this)"></a>
             </aside>
         </div>
 
@@ -71,8 +70,8 @@
             <!-- insertion des 3 images des acteurs-->
             <div class="threeImg">
                 <figure>
-                    <img  src="./Illustrations/Home/Bathome2.png" alt="">
-                    <div>
+                    <img src="./Illustrations/Home/Bathome2.png" alt="">
+                    <div id="zoomImg">
                         <figcaption>
                             <img src="./Illustrations/Home/Robert_Pattinson.png" alt="Robert_Pattinson">
                             <p>Robert Pattinson <br>
@@ -83,7 +82,7 @@
                 </figure>
                 <figure>
                     <img  src="./Illustrations/Home/Bathome3.png" alt="">
-                    <div>
+                    <div id="zoomImg">
                         <figcaption>
                             <img src="./Illustrations/Home/Christian_Bale.png" alt="Christian_Bale">
                             <p>Christian Bale <br>
@@ -94,7 +93,7 @@
                 </figure>
                 <figure>
                     <img src="./Illustrations/Home/Bathome4.png" alt="">
-                    <div>
+                    <div id="zoomImg">
                         <figcaption>
                             <img src="./Illustrations/Home/Ben_Affleck.png" alt="Ben_Affleck">
                             <p>Ben Affleck <br>
@@ -325,14 +324,14 @@
         <!-- L'ajout des logos tout en bas de la page -->
         <div class="footerFig">
             <figure>
-                <img src="../Assets/Logos/logo_sayna_white.png" alt="sayna">
+                <img src="../Assets/Logos/logo_sayna_white.png" alt="sayna" onmouseover="onSayna.call(this)" onmouseout="outSayna.call(this)">
                 <a href="#"><img src="../Assets/Logos/icon_x.png" alt="x"></a> 
-                <img src="../Assets/Logos/icon_DC.png" alt="DC">
+                <img src="../Assets/Logos/icon_DC.png" alt="DC" onmouseover="onDc.call(this)" onmouseout="outDc.call(this)">
             </figure>
             <figure>
-                <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook"></a>
-                <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="instagram"></a>
-                <a href="#"><img src="../Assets/Logos/icon_tw.png" alt="twitter"></a>
+                <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook" onmouseover="onFb.call(this)" onmouseout="outFb.call(this)"></a>
+                <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="instagram" onmouseover="onIg.call(this)" onmouseout="outIg.call(this)"></a>
+                <a href="#"><img src="../Assets/Logos/icon_tw.png" alt="twitter"  onmouseover="onTw.call(this)" onmouseout="outTw.call(this)"></a>
             </figure>
         </div>
     </footer>
