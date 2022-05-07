@@ -16,7 +16,8 @@
 <body>
     <main class="container">
         <header id="navbar">
-            <img src="./Logos/logohome.png" alt="Batman Logo">
+            <img id="imgnav" src="./Logos/logohome.png" alt="Batman Logo">
+            <img id="imghover" src="./Logos/logohomehover.png" alt="">
             <div class="navlist">
                 <a class="active" href="home.html">HOME</a>
                 <a href="game.html">GAME</a>
@@ -24,26 +25,28 @@
         </header>
 
         <!-- la partie de page au début -->
-        <section id="content1">
-            <p>Au nom de ses parents assassinés, Bruce Wayne mène <br>
-                une guerre éternelle contre les criminels de Gotham City. <br>
-                Il est vengeur. Il est la nuit. 
-            </p>
-            <p id="batman">Il est Batman.</p>
-            <div class="btn">
-                <button>VOIR LE HÉROS</button>
-                <button>LES ADVERSAIRES</button>
-            </div>
-        </section>
+        <div class="conteneur">
+            <section id="content1">
+                <p>Au nom de ses parents assassinés, Bruce Wayne mène <br>
+                    une guerre éternelle contre les criminels de Gotham City. <br>
+                    Il est vengeur. Il est la nuit. 
+                </p>
+                <p id="batman">Il est Batman.</p>
+                <div class="btn">
+                    <button>VOIR LE HÉROS</button>
+                    <button>LES ADVERSAIRES</button>
+                </div>
+            </section>
 
-        <!-- les logos du coté droit -->
-        <aside>
-            <a href="#"><img src="../Assets/Logos/logo_bat_flèche.png" alt="flèche haut"></a>
-            <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook"></a>
-            <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="Instagram"></a>
-            <a href=""><img src="../Assets/Logos/icon_tw.png" alt="twitter"></a> 
-            <a href="#"><img src="../Assets/Logos/logo_bat_flèche_2.png" alt="flèche bas"></a>
-        </aside>
+            <!-- les logos du coté droit -->
+            <aside>
+                <a href="#"><img src="../Assets/Logos/logo_bat_flèche.png" alt="flèche haut"></a>
+                <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook"></a>
+                <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="Instagram"></a>
+                <a href=""><img src="../Assets/Logos/icon_tw.png" alt="twitter"></a> 
+                <a href="#"><img src="../Assets/Logos/logo_bat_flèche_2.png" alt="flèche bas"></a>
+            </aside>
+        </div>
 
         <!-- insertion de la flèche vers le bas -->
         <div id="down">
@@ -186,12 +189,55 @@
                             </p>
                         </div>
                     </div>
-                <a href="#"><img src="../Assets/Logos/Icones en + dans Home/icon_flèche_2.png" alt="flèche droit"></a> 
+
+                    <!-- les images passés lors du clic du bouton -->
+                    <div class="cardBox boxhidden">
+                        <img src="../Assets/Illustrations/Home/Bathome10_slide_ba.png" alt="">
+                        <div class="action cardhidden">
+                            <h5>ACTION, ADVENTURE</h5>
+                            <p id="begin">The Dark Knight</p>
+                            <p id="imdb">IMBD: <span>9</span></p>
+                            <p id="bruceText">Batman aborde une phase décisive dans sa guerre contre 
+                                le crime. Avec l'aide du lieutenant de police Jim Gordon et du 
+                                nouveau procureur Harvey Dent, il entreprend de démanteler
+                                les dernières organisations criminelles qui infestent les rues
+                                de la ville. L'association s'avère efficace, mais le trio se heurte
+                                bient&ocirc; à un nouveau génie du crime qui répand la terreur et le chaos dans Gotham : le Joker.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cardBox boxhidden">
+                        <img src="../Assets/Illustrations/Home/Bathome11_slide_ba.png" alt="">
+                        <div class="action cardhidden">
+                            <h5>ACTION, ADVENTURE</h5>
+                            <p id="begin">The Dark Knight Rises</p>
+                            <p id="imdb">IMBD: <span>8.4</span></p>
+                            <p id="bruceText">Huit ans ont passé depuis que Batman a disparu, passant du 
+                                statut de héros à celui de fugitif. Le << Chevalier Noir >> a tout 
+                                sacrifié pour le mieux. Pendant un certain temps, le mensonge
+                                a l'effet escompté: la criminalité de Gotham City est presque
+                                éliminée par le commissaire James Gordon avec l'unité
+                                anticrime d'Harvey Dent. Mais l'arrivée à Gotham de Bane, un
+                                terroriste masqué, chamboule l'ordre établi et pousse Bruce à
+                                sortir de l'exil qu'il s'est imposé</p>
+
+                        </div>
+                    </div>
+                <a href="#" ><img src="../Assets/Logos/Icones en + dans Home/icon_flèche_2.png" alt="flèche droit"></a> 
             </div>
 
-            <!-- L'ajout du bande annonce officielle -->
+            <!-- L'ajout des vidéos bande annonce officielle -->
             <div class="bandeOffice">
-                <img src="../Assets/Illustrations/Home/Bathome9_ba.png" alt="">
+                <div>
+                    <iframe width="1000" height="600" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                </div>
+                <div id="hiddenvideo">
+                    <iframe width="1000" height="600" src="https://www.youtube.com/embed/UMgb3hQCb08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="hiddenvideo">
+                    <iframe width="1000" height="600" src="https://www.youtube.com/embed/OiqPQ7L_C00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>

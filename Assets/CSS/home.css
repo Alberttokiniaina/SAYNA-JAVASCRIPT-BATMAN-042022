@@ -23,6 +23,7 @@
 .container{
     background-image: url(../Illustrations/Home/Bathome1.png);
     background-size: cover; 
+    background-position: center;
 }
 
 #navbar{
@@ -35,7 +36,7 @@
     margin: 0 100px;
 }
 
-#content1, #down, #bg, #slide, #bg-4{
+.conteneur, #down, #bg, #slide, #bg-4{
     border-right: 2px solid #bcbbbd62;
     border-left: 2px solid #bcbbbd62;
     margin: 0 100px;
@@ -49,16 +50,26 @@
     font-size: xx-large;
 }
 
+#imghover{
+    display: none;
+}
 
 .navlist .active{
     border-bottom: 2px solid var(--white-ad-color);
 }
 
+.conteneur{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 #content1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    top: 100px;
+    left: 300px;
     height: 500px;
     text-align: center;
 }
@@ -97,16 +108,16 @@ aside{
     flex-direction: column;
     text-align: center;
     gap: 30px;
-    position: relative;
-    bottom: 250px;
-    right: -610px;
+    scroll-behavior: smooth;
+    z-index: 1;
+    margin-top: 300px;
+    margin-right: -54px;
 }
 
 /* le flèche vers le bas */
 #down{
     text-align: center;
-    padding: 300px 0 0;
-    margin-top: -272px;
+    padding: 200px 0 0;
 }
 
 /* le container2 */
@@ -114,6 +125,12 @@ aside{
     background-color: var(--dark-ad-color);
     color: var(--white-ad-color);
     height: auto;
+}
+
+.container4{
+    padding-top: 150px;
+}
+#cinema{
     padding-top: 150px;
 }
 
@@ -139,8 +156,6 @@ aside{
     padding-top: 150px;
 }
 
-
-
 /* positionement des 3 images */
 .threeImg{
     display: flex;
@@ -151,8 +166,6 @@ aside{
     margin-top: 150px;
     padding-bottom: 100px;
 }
-
-
 
 /* formation de figcaption au dessous des images */
 figure div {
@@ -309,10 +322,19 @@ figure div figcaption img{
     margin-top: 5px;
 }
 
-/* la bande annonce officielle */
-.bandeOffice {
-    margin: 80px 0px 0px 65px;
-    padding-bottom: 100px;
+/* les deux cardbox lors du clic de bouton next et prev */
+.boxhidden{
+    display: none;
+}
+
+/* les vidéos de bande annonce officielle */
+.bandeOffice div{
+    margin: 100px 110px 0;
+    padding-bottom: 150px;
+}
+
+.bandeOffice #hiddenvideo{
+    display: none;
 }
 
 /* construction du formulaire */
