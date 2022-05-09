@@ -8,11 +8,13 @@ for(let i = 0; i < header.length; i++){    //ajoutez du boucle pour parcourir to
     header[i].addEventListener('mouseover', headerOn);   //le mouseover utilisé pour le hover au survol du souris
 
     function headerOff () {
-        header[i].style.borderBottom = "";
-        header[i].style.fontWeight = "";
+        header[i].style.borderBottom = "none";
+        header[i].style.fontWeight = "none";
     }
     header[i].addEventListener('mouseout', headerOff);
 }
+
+
 
 // le changement du couleur des logos 
 // pour le logo batman en haut de la page
@@ -53,11 +55,11 @@ function outFb () {
 
 // pour le logo instagram
 function onIg () {
-    this.setAttribute("src","../Assets/Logos/icon_ig.png")
+    this.setAttribute("src","../Assets/Logos/icon_ighove.png")
 }
 
 function outIg () {
-    this.setAttribute("src", "../Assets/Logos/icon_ighove.png")
+    this.setAttribute("src", "../Assets/Logos/icon_ig.png")
 }
 
 // pour le logo twitter
@@ -86,7 +88,6 @@ function onDc () {
 function outDc () {
     this.setAttribute("src", "../Assets/Logos/icon_DC.png")
 }
-
 
 
 

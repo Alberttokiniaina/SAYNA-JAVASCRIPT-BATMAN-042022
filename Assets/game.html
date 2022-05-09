@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../Assets/CSS/game.css">
 </head>
 <body>
-    <main class="container">
+    <main class="container" id="topPage">
         <header id="navbar">
             <img src="./Logos/logohome.png" alt="Batman Logo">
             <div class="navlist">
@@ -28,11 +28,11 @@
 
             <!-- les logos du coté droit -->
             <aside>
-                <a href="#"><img src="../Assets/Logos/logo_bat_flèche.png" alt="flèche haut"></a>
-                <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook"></a>
-                <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="Instagram"></a>
-                <a href="#"><img src="../Assets/Logos/icon_tw.png" alt="twitter"></a> 
-                <a href="#"><img src="../Assets/Logos/logo_bat_flèche_2.png" alt="flèche bas"></a>
+                <a href="#topPage"><img src="../Assets/Logos/logo_bat_flèche.png" alt="flèche haut"  onmouseover="upImg.call(this)" onmouseout="upToImg.call(this)"></a>
+                <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook"  onmouseover="onFb.call(this)" onmouseout="outFb.call(this)"></a>
+                <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="Instagram" onmouseover="onIg.call(this)" onmouseout="outIg.call(this)"></a>
+                <a href="#"><img src="../Assets/Logos/icon_tw.png" alt="twitter" onmouseover="onTw.call(this)" onmouseout="outTw.call(this)"></a> 
+                <a href="#downPage"><img src="../Assets/Logos/logo_bat_flèche_2.png" alt="flèche bas" onmouseover="downImg.call(this)" onmouseout="downToImg.call(this)"></a>
             </aside>
         </section>
 
@@ -323,7 +323,7 @@
         </section>
 
         <!-- L'ajout des logos tout en bas de la page -->
-        <div class="footerFig">
+        <div class="footerFig" id="downPage">
             <figure>
                 <img src="../Assets/Logos/logo_sayna_white.png" alt="sayna">
                 <a href="#"><img src="../Assets/Logos/icon_x.png" alt="x"></a> 

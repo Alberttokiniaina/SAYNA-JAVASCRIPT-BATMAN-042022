@@ -14,7 +14,7 @@
    
 </head>
 <body>
-    <main class="container">
+    <main class="container" id="topPage">
         <header id="navbar">
             <img id="imgnav" src="./Logos/logohome.png" alt="Batman Logo" onmouseover="onImg.call(this)" onmouseout="outImg.call(this)">
             <div class="navlist">
@@ -26,24 +26,24 @@
         <!-- la partie de page au début -->
         <div class="conteneur">
             <section id="content1">
-                <p>Au nom de ses parents assassinés, Bruce Wayne mène <br>
+                <p id="Ptext"> Au nom de ses parents assassinés, Bruce Wayne mène <br>
                     une guerre éternelle contre les criminels de Gotham City. <br>
                     Il est vengeur. Il est la nuit. 
                 </p>
                 <p id="batman">Il est Batman.</p>
                 <div class="btn">
-                    <button>VOIR LE HÉROS</button>
-                    <button>LES ADVERSAIRES</button>
+                    <button><a href="#cinema"> VOIR LE HÉROS</a></button>
+                    <button><a href="#nemesis"> LES ADVERSAIRES</a></button>
                 </div>
             </section>
 
             <!-- les logos du coté droit -->
             <aside>
-                <a href="#"><img src="../Assets/Logos/logo_bat_flèche.png" alt="flèche haut" onmouseover="upImg.call(this)" onemouseout="upToImg.call(this)"></a>
+                <a href="#topPage"><img src="../Assets/Logos/logo_bat_flèche.png" alt="flèche haut" onmouseover="upImg.call(this)" onmouseout="upToImg.call(this)"></a>
                 <a href="#"><img src="../Assets/Logos/icon_facebook.png" alt="facebook" onmouseover="onFb.call(this)" onmouseout="outFb.call(this)"></a>
                 <a href="#"><img src="../Assets/Logos/icon_ig.png" alt="Instagram" onmouseover="onIg.call(this)" onmouseout="outIg.call(this)"></a>
-                <a href=""><img src="../Assets/Logos/icon_tw.png" alt="twitter" onmouseover="onTw.call(this)" onmouseout="outTw.call(this)"></a> 
-                <a href="#"><img src="../Assets/Logos/logo_bat_flèche_2.png" alt="flèche bas" onmouseover="downImg.call(this)" onmouseout="downToImg.call(this)"></a>
+                <a href="#"><img src="../Assets/Logos/icon_tw.png" alt="twitter" onmouseover="onTw.call(this)" onmouseout="outTw.call(this)"></a> 
+                <a href="#basFoot"><img src="../Assets/Logos/logo_bat_flèche_2.png" alt="flèche bas" onmouseover="downImg.call(this)" onmouseout="downToImg.call(this)"></a>
             </aside>
         </div>
 
@@ -118,7 +118,7 @@
         <div id="bg-4">
             <div id="nemesis">
                 <h2>NÉMÉSIS</h2>
-                <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart 
+                <p >Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart 
                     du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou 
                     psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se 
                     mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmis les 
@@ -322,7 +322,7 @@
         </div>
 
         <!-- L'ajout des logos tout en bas de la page -->
-        <div class="footerFig">
+        <div class="footerFig" id="basFoot">
             <figure>
                 <img src="../Assets/Logos/logo_sayna_white.png" alt="sayna" onmouseover="onSayna.call(this)" onmouseout="outSayna.call(this)">
                 <a href="#"><img src="../Assets/Logos/icon_x.png" alt="x"></a> 
