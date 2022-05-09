@@ -45,3 +45,4 @@ function offConfirm () {
     btnConfirm.style.background = 'linear-gradient(90deg, rgba(248, 247, 246, 0.247) 0%, rgba(235, 50, 33, 0.418) 66%, rgba(232, 14, 14, 0.493) 100%)';
 }
 btnConfirm.addEventListener('mouseout', offConfirm);
+

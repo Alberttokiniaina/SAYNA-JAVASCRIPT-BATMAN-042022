@@ -265,7 +265,6 @@ figure div figcaption img{
     100%{
         background-image: url(../Illustrations/Home/Batslider10.png);
     }
-    
 }
 
 #slide{
@@ -442,6 +441,10 @@ footer{
     margin-top: 10px;
     margin-left: 700px;
     padding-bottom: 120px;
+}
+
+.texture{
+    display: none;
 }
 
 #textSeule{
